@@ -327,6 +327,21 @@ endpoints:
   #     #     deploymentName: claude-3-5-haiku@20241022  # Override for this model
 
   custom:
+    # Diwness Cloud OpenAI-compatible Example
+    - name: 'diwness'
+      apiKey: 'dummy'
+      baseURL: 'https://diwness.cloud/v1'
+      models:
+        default:
+          - 'claude-sonnet-4-5-20250929'
+          - 'claude-haiku-4-5-20251001'
+          - 'claude-opus-4-5-20251101'
+          - 'claude-opus-4-6'
+        fetch: false
+      titleConvo: true
+      titleModel: 'claude-haiku-4-5-20251001'
+      modelDisplayLabel: 'diwness'
+
     # Groq Example
     - name: 'groq'
       apiKey: '${GROQ_API_KEY}'
